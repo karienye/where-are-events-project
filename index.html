@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>where-are-events</title>
+    <link rel="stylesheet" type = "text/css" href="style.css" />
+
+</head>
+<body>
+    <h1> WHERE ARE EVENTS 🤔?? </h1>
+
+    <div class="pages">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <input type="text" placeholder="Search for events">
+      </div>
+
+    <div class = " header">
+        <h2> Where are the events though?</h2>
+        <p>I know you get bored and want to be out and enjoy but are wondering...</p>
+         <p>now where do i go?</p>  <p>worry No More... because we got you</p>
+         <br>
+         <P>Find events near you of whatever category you wish and enjoy your search and have a great time</P>
+        <p> catch the Hottest and most trending events</p>
+    </div>
+    <div id="music" class="tabcontent">
+        <h1>music events</h1>
+        <p>Trending music events.</p>
+      </div>
+      <button class="tablink" onclick="openEvent('music', this, 'blue')" id="defaultOpen">music events</button>
+      <div id="business" class="tabcontent">
+        <h1>Busines events</h1>
+        <p>Big business events around.</p>
+      </div>
+      <button class="tablink" onclick="openEvent('business', this, 'purple')">Business events</button>
+      <div id="sports" class="tabcontent">
+        <h1>sports & fitness events 🏋🏾‍♀️</h1>
+        <p>fitness events.</p>
+      </div>
+      <button class="tablink" onclick="openEvent('sports', this, 'blue')">sports & fitness events 🏋🏾‍♀️</button>
+      <div id="health" class="tabcontent">
+        <h1>Health events</h1>
+        <p>lets know about our health.</p>
+      </div>
+      <button class="tablink" onclick="openEvent('health', this, 'purple')">Health events</button>
+      <div id="theaters" class="tabcontent">
+        <h1>Theater plays</h1>
+        <p>get the latest new plays in theaters.</p>
+      </div>
+      <button class="tablink" onclick="openEvent('theaters', this, 'blue')">Theater plays</button>
+      <div id="movies" class="tabcontent">
+        <h1>Movies</h1>
+        <p>Worth watching.</p>
+        <button class="tablink" onclick="openEvent('movies', this, 'purple')">Movies</button>
+      </div>
+      
+      <div>
+        <button id = "locations" onclick = "color(blue)"> choose location
+            <select id="location" name="town">
+                <option value="nairobi">Nairobi</option>
+                <option value="mombasa">Mombasa</option>
+                <option value="kisumu">Kisumu</option>
+                <option value="Nyeri">Nyeri</option>
+              </select>
+        </button>
+    
+    <div class = "grid-container"> <br>
+        
+        <ul>
+        <span><li class = "grid">Music event<img src="https://img.freepik.com/free-vector/music-event-poster-with-photo_52683-42061.jpg?w=2000" alt="musicevent"></li></span>
+        <span> <li class = "grid">Health event<img src="https://pictures-kenya.jijistatic.com/15488845_img-20201009-wa0005-3_640x834.jpg" alt="healthevent"></li></span>
+        <span> <li class = "grid"> Sports & fitness<img src="https://i.pinimg.com/originals/7e/67/92/7e67929613e55564fe59207b3edb0da4.jpg" alt="sports & fitness"></li></span>
+        <span> <li class = "grid"> Business event<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmhvJS_4XiUJCiFI4peau54o1RUjuDxyR3zg&usqp=CAU" alt="business event"></li></span>
+    </ul>
+    </div>
+    
+
+    </div>
+    <div id = "footer">
+        <form action="submit">
+            <label for="event">EVENT</label>
+    <input type="text" id="event" name="event name" placeholder="the name..">
+
+    <label for="when">Time of event</label>
+    <input type="text" id="Tofevent" name="date" placeholder="date">
+
+    <label for="img">poster address link</label>
+    <input type="url" id="img" name="images" placeholder="images?q">
+
+    <label for="location">Location</label>
+    <select id="city" name="town">
+        <option value="nairobi">Nairobi</option>
+        <option value="mombasa">Mombasa</option>
+        <option value="kisumu">Kisumu</option>
+        <option value="Nyeri">Nyeri</option>
+    </select>
+
+    <label for="info">infomation of event</label>
+    <textarea id="info" name="info" placeholder="Write something.." style="height:fit-content"></textarea>
+
+    <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
