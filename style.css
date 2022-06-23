@@ -8,6 +8,7 @@ html, body{ background-attachment: fixed;
 	color: black;
 	text-align: left;
 	background-color:whitesmoke;
+  background-image: "https://images.squarespace-cdn.com/content/v1/5720ede5555986b16f146642/1592573605898-9F5ZFWQDJNQJAG05ZBMI/image-asset.jpeg?format=500w";
     
 }
  
@@ -53,7 +54,7 @@ div.logo{
   
  .img {
         border-radius: 8%;
-        width: 200px;
+        width: 100px;
         height: 200px;
       }
 .event-item{
@@ -62,6 +63,8 @@ div.logo{
         grid-row: auto;
         padding: 5px;
         font-size: 30px;
+        width: fit-content;
+        height: fit-content;
       }
       
       .form-container input[type=text]:focus, .form-container input[type=password]:focus {
@@ -76,9 +79,9 @@ div.logo{
         background: #f1f1f1;
       }
       .form-popup {
-        display: none;
+        display:none;
         position: fixed;
-        bottom: 0;
+        bottom: 10px;
         right: 15px;
         border: 3px solid #f1f1f1;
         z-index: 9;
@@ -86,7 +89,7 @@ div.logo{
       .form-container {
         max-width: 300px;
         padding: 10px;
-        background-color: rgb(248, 31, 31);
+        background-color: rgb(8, 87, 190);
       }
      
     .open-button {
@@ -102,7 +105,30 @@ div.logo{
       width: 280px;
     }
   .subscribe{
-    max-width: 100px;
+    width: 100px;
+    height: 100px;
     padding: 10px;
-    background-color: rgb(59, 134, 247);
+    background-color: none;
+    color: black;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .like-glyph {
+    cursor: pointer;
+  }
+  #projects .proCont{
+    background-color: rgb(90, 12, 236);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    margin-bottom: 10px;
   }
