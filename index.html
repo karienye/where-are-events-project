@@ -10,26 +10,17 @@
 </head>
 <body>
   <div class="logo">
-    <h1> EVENTS CLUB 🤔?? </h1>
+    <h1> EVENTS CLUB </h1>
     <div class="pages">
       <ul>
-     <a class="active" href="home">Home</a>
-     <a href="contact" id = "contact">Contact us</a>
-     <a href="categories">categories</a>
-     <a href="contact" id = "contact">Contact us</a>
+     <a class="active" href="/index.html">Home</a>
+     <a href="" id = "contact">Contact us</a>
+     <a href="">categories</a>
+     
      <input type="text" placeholder="Search for events">
   </ul>
   </div>
-  <div>
-    <button id = "locations" onclick = "color(blue)"> choose location
-        <select id="location" name="town">
-            <option value="nairobi">Nairobi</option>
-            <option value="mombasa">Mombasa</option>
-            <option value="kisumu">Kisumu</option>
-            <option value="Nyeri">Nyeri</option>
-          </select>
-    </button>
-  </div>
+ 
   <div class="shows-events">
     <div class="container">
         <div class="row">
@@ -48,69 +39,52 @@
       </div>
       
 
+<h1>events display</h1>
+<div id ="cards">
+  <div class="proCards">
+    <h1 class = "title">title</h1>
+    <img src="https://image.shutterstock.com/image-vector/events-colorful-typography-banner-260nw-1356206768.jpg" alt="img" class = "images">
+    <p class="description">description</p>
+    <p class="name">name</p>
+  </div>
+</div>
+
+<div id="root"></div>
+
       <h2>EVENTS</h2>
       <div class="row">
-        <div class="column">
-        <div class="event-item">
-
-          <div class="image">
-            <img src= "https://img.freepik.com/free-vector/modern-music-event-poster-with-abstract-brush-stroke_1361-1917.jpg?w=360" alt="this event">
-             </div>
-                        <h4>Sunny Hill Festival</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur do adipiscing eliterirt sed eiusmod alori...</p>
-                       <a href="event-details.html">Discover More</a>
-                       <div>
-                        <ul>
-                          <li class="like">If you like this event please like <span class="like-glyph">&#x2661;</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                    
-                </div>
-                
-                <div class="column">
-                <div class="event-item">
-                  <div class="image">
-                    <img src="https://img.freepik.com/free-vector/modern-music-event-poster-with-abstract-brush-stroke_1361-1917.jpg?w=360" alt="this event">
-                </div>
-                          <h4>Sunny Hill Festival</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur do adipiscing eliterirt sed eiusmod alori...</p>
-                         <a href="event-details.html">Discover More</a>
-                         <div>
-                          <ul>
-                            <li class="like">If you like this event please like <span class="like-glyph">&#x2661;</span></li>
-                          </ul>
-                        </div>
-                      </div>
+        
                   </div>
               </div>
 
-           //////   <div class="row mt-5" id="projectContainer">
+            <section id = "projects">
+              <div class="projlist container">
+                <div class="row mt-5" id="projectContainer">
         
                  <div class="col-4">
                   <div class="proCont">
-                    <p>holiday date </p>
-                    <h3>title</h3>
-                    <p>date to be observed</p>
-                    <p>Name in English</p>
-                    <p>Name in french </p>
+                    <img src="" alt="event"> <input type="url" placeholder="url"></img>
+                    <h3><input type="text" placeholder="name"></h3>
+                    <p><input type="text" placeholder="description"></p>
+                    <p><input type="url" placeholder="url"></p>
+                    <button id = "enter" type="submit">Enter</button>
+                    <div id = "results"></div>
                   </div>
                 </div> 
         
-              </div>///////.
 
+              </div>
+            </div>
+            </section>
               <div class="subscribe">
                 <button class="open-button" onclick="openForm()">SUBSCRIBE</button>
                 <div class="form-popup" id="myForm">
                     <form class="form-container">
-                      <h1>login</h1>
+                      <h1>subscribe</h1>
                       <label for="email"><b>Email</b></label>
                       <input type="text" placeholder="Enter Email" name="email" required>
-                  
-                      <label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" required>
-                  
-                      <button type="submit" class="btn">Login</button>
+          
+                      <button id="myBtn" type="submit" class="btn">Login</button>
                       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                     </form>
                   </div>

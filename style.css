@@ -7,9 +7,13 @@ html, body{ background-attachment: fixed;
 	line-height: 1.5;
 	color: black;
 	text-align: left;
-	background-color:whitesmoke;
-  background-image: "https://images.squarespace-cdn.com/content/v1/5720ede5555986b16f146642/1592573605898-9F5ZFWQDJNQJAG05ZBMI/image-asset.jpeg?format=500w";
     
+}
+body{
+  background-repeat: no-repeat;
+  background-image: url('https://static-cse.canva.com/blob/572626/1.magebyRodionKutsaevviaUnsplash.jpg');
+  background-size: cover;
+  opacity: 100%;
 }
  
 div.logo{
@@ -46,7 +50,7 @@ div.logo{
     padding: 2%;
     text-align: center;
     size: 10%;
-    background-color: #1421d8;
+    background-color: #c1c4f7;
   }
   .tabcontent:hover {
     background-color: yellowgreen;
@@ -54,8 +58,8 @@ div.logo{
   
  .img {
         border-radius: 8%;
-        width: 100px;
-        height: 200px;
+        width: 50px;
+        height: 100px;
       }
 .event-item{
         background-color: rgba(171, 181, 236, 0.8);
@@ -89,11 +93,11 @@ div.logo{
       .form-container {
         max-width: 300px;
         padding: 10px;
-        background-color: rgb(8, 87, 190);
+        background-color: #c1c4f7;
       }
      
     .open-button {
-      background-color: rgb(35, 121, 170);
+      background-color: #c1c4f7;
       color: white;
       padding: 16px 20px;
       border: none;
@@ -126,9 +130,38 @@ div.logo{
     cursor: pointer;
   }
   #projects .proCont{
-    background-color: rgb(90, 12, 236);
+    background-color: #c1c4f7;
     padding: 15px;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
     margin-bottom: 10px;
+  }
+  a:link, a:visited {
+    background-color: white;
+    color: red;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: orchid;
+  }
+  input{
+    background-color: white;
+    color: red;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  #cards{
+    background-color: none;
+    padding: 200px;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    margin-bottom: 100px;
+    color: black;
+  
   }
