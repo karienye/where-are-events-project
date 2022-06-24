@@ -8,6 +8,7 @@
     <link rel="stylesheet" type = "text/css" href="style.css" />
 
 </head>
+
 <body>
   <div class="logo">
     <h1> EVENTS CLUB </h1>
@@ -25,7 +26,7 @@
     <div class="container">
         <div class="row">
                 <h2>Our Shows & Events</h2>
-                <span>Check out upcoming and past shows & events.</span>
+                <span>Check out upcoming events.</span>
         </div>
     </div>
 </div>
@@ -41,37 +42,21 @@
 
 <h1>events display</h1>
 <div id ="cards">
-  <div class="proCards">
-    <h1 class = "title">title</h1>
-    <img src="https://image.shutterstock.com/image-vector/events-colorful-typography-banner-260nw-1356206768.jpg" alt="img" class = "images">
-    <p class="description">description</p>
-    <p class="name">name</p>
+  <img src="https://image.shutterstock.com/image-vector/events-colorful-typography-banner-260nw-1356206768.jpg" alt="img" class = "images">
+  <div id="myData">
   </div>
 </div>
 
 <div id="root"></div>
 
-      <h2>EVENTS</h2>
-      <div class="row">
-        
-                  </div>
-              </div>
-
-            <section id = "projects">
-              <div class="projlist container">
-                <div class="row mt-5" id="projectContainer">
-        
-                 <div class="col-4">
-                  <div class="proCont">
-                    <img src="" alt="event"> <input type="url" placeholder="url"></img>
-                    <h3><input type="text" placeholder="name"></h3>
-                    <p><input type="text" placeholder="description"></p>
-                    <p><input type="url" placeholder="url"></p>
-                    <button id = "enter" type="submit">Enter</button>
-                    <div id = "results"></div>
-                  </div>
-                </div> 
-        
+    
+    <!--   <div>
+          <div id="myData"> 
+            '<div id = "myData"<img src="'+data[i].url+'" /></div> ' ;
+            '"<img src="'+data[i].name+'" />'
+          </div>
+        -->
+        </div>
 
               </div>
             </div>
@@ -88,7 +73,7 @@
                       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                     </form>
                   </div>
-        
+        <script src ="db.json"></script>
     <script src="index.js"></script>
 </body>
 </html>
