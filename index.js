@@ -1,5 +1,9 @@
 
-fetch("http://localhost:3000/events")
+document.addEventListener("DOMContentLoaded", () => {
+  const projectUrl = "http://localhost:3000/events"
+  const eventsUrl = "https://eventfinda-eventfinda-nz.p.rapidapi.com/events.json/?rapidapi-key=59db1ebdd8msh4851772c7df0242p11eba8jsn1072ca5a255b"
+  
+fetch(projectUrl)
             .then(function (response) {
                 return response.json();
             })
@@ -19,7 +23,7 @@ fetch("http://localhost:3000/events")
                 
             }
         }
-
+      })
         /*
         for (var i=0; i< data["item"].images.length; i++) {
 var img = data["item"]images[i];
@@ -40,19 +44,9 @@ $('#mydiv').append($ul);
 
 
 
-function openEvent(eventName, element, color) {
-  let i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(eventName).style.display = "block";
-  element.style.backgroundColor = color;
-}
+
+
+
 // document.getElementById("defaultOpen").click();
 
 function formSubmit(response) {
@@ -71,7 +65,6 @@ function displayText() {
   alert ('YOU ARE SUBSCRIBED!!');
 }
 
-// liker
 
 
 

@@ -30,13 +30,7 @@ div.logo{
     text-size-adjust:inherit;
 }
 
-#locations{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(7, 7, 7);
-  background-color: chocolate;
-  size: 10%;
-  text-align: left;  
-}
+
 .show-events{
   text-align: center;
   color: rgb(247, 44, 44);
@@ -57,19 +51,11 @@ div.logo{
   }
   
  .img {
-        border-radius: 8%;
+        border-radius: 60%;
         width: 50px;
         height: 100px;
       }
-.event-item{
-        background-color: rgba(171, 181, 236, 0.8);
-        text-align:left;
-        grid-row: auto;
-        padding: 5px;
-        font-size: 30px;
-        width: fit-content;
-        height: fit-content;
-      }
+
       
       .form-container input[type=text]:focus, .form-container input[type=password]:focus {
         background-color: #ddd;
@@ -87,17 +73,17 @@ div.logo{
         position: fixed;
         bottom: 10px;
         right: 15px;
-        border: 3px solid #f1f1f1;
+        border: 3px solid #e9497e;
         z-index: 9;
       }
       .form-container {
         max-width: 300px;
         padding: 10px;
-        background-color: #c1c4f7;
+        background-color: #04085a;
       }
      
     .open-button {
-      background-color: #c1c4f7;
+      background-color: #02075e;
       color: white;
       padding: 16px 20px;
       border: none;
@@ -112,30 +98,10 @@ div.logo{
     width: 100px;
     height: 100px;
     padding: 10px;
-    background-color: none;
+    background-color: blue;
     color: black;
   }
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .like-glyph {
-    cursor: pointer;
-  }
-  #projects .proCont{
-    background-color: #c1c4f7;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
-    margin-bottom: 10px;
-  }
+  
   a:link, a:visited {
     background-color: white;
     color: red;
@@ -162,6 +128,7 @@ div.logo{
     border-radius: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
     margin-bottom: 100px;
-    color: black;
+    color: rgb(0, 0, 0);
+    
   
   }
